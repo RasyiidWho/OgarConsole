@@ -1,7 +1,7 @@
 # OgarConsole v1.0.2
 ![Image of OgarConsole] (http://i.imgur.com/iM539GC.png)
 
-[![Gitter](https://badges.gitter.im/LegitSoulja/OgarConsole.svg)](https://gitter.im/LegitSoulja/OgarConsole?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=body_badge)
+[![Gitter](https://badges.gitter.im/LegitSoulja/OgarConsole.svg)](https://gitter.im/LegitSoulja/OgarConsole?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=body_badge) ![Gitter](https://travis-ci.org/LegitSoulja/OgarConsole.svg?branch=master)
 
 > OgarConsole Supports
 - [x] Ogar
