@@ -28,7 +28,7 @@
 - json = Should require OgarConsole **package.json** file. Please make sure that it is included in the directory.
 
 ## Help / Commands / Ogar Functionalites
-When OgarConsole is running and you have connected to **http://localhost:1000** type **help** in cmd to read help & commands of Ogar
+When OgarConsole is running and you have connected to **http://localhost:1000** type **help** in cmd to read help & commands of Ogar.
 
 ## Purchased OgarConsole?
 > You have been ripped off of buying OgarConsole and you should get a refund. OgarConsole is a free to use plugin.
