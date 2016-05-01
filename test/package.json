@@ -7,9 +7,7 @@
 	"socket.io":"latest",
 	"fs":"latest",
 	"http":"latest",
-	"express":"latest",
-	"ws": "latest",
-    	"vector2-node": "latest"
+	"express":"latest"
   
   },
   "devDependencies": {},
