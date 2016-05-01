@@ -1,7 +1,7 @@
 # OgarConsole v1.0.2
 ![Image of OgarConsole] (http://i.imgur.com/iM539GC.png)
 
-[![Gitter](https://badges.gitter.im/LegitSoulja/OgarConsole.svg)](https://gitter.im/LegitSoulja/OgarConsole?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=body_badge) [![Build Status](https://travis-ci.org/LegitSoulja/OgarConsole.svg?branch=master)](https://travis-ci.org/LegitSoulja/OgarConsole) [![GitHub issues](https://img.shields.io/github/issues/LegitSoulja/OgarConsole.svg)](https://github.com/LegitSoulja/OgarConsole/issues) [![GitHub stars](https://img.shields.io/github/stars/LegitSoulja/OgarConsole.svg)](https://github.com/LegitSoulja/OgarConsole/stargazers)
+[![Gitter](https://badges.gitter.im/LegitSoulja/OgarConsole.svg)](https://gitter.im/LegitSoulja/OgarConsole?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=body_badge) [![Build Status](https://travis-ci.org/LegitSoulja/OgarConsole.svg?branch=master)](https://travis-ci.org/LegitSoulja/OgarConsole) [![GitHub issues](https://img.shields.io/github/issues/LegitSoulja/OgarConsole.svg)](https://github.com/LegitSoulja/OgarConsole/issues) [![GitHub stars](https://img.shields.io/github/stars/LegitSoulja/OgarConsole.svg)](https://github.com/LegitSoulja/OgarConsole/stargazers) [![Twitter](https://img.shields.io/twitter/url/https/github.com/LegitSoulja/OgarConsosle.svg)](https://twitter.com/intent/tweet?text=Wow:&url=%5Bobject%20Object%5D)
 
 > OgarConsole Supports
 - [x] Ogar
