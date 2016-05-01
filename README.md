@@ -1,6 +1,8 @@
 # OgarConsole v1.0.2
 ![Image of OgarConsole] (http://i.imgur.com/iM539GC.png)
 
+[![Gitter](https://badges.gitter.im/LegitSoulja/OgarConsole.svg)](https://gitter.im/LegitSoulja/OgarConsole?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=body_badge)
+
 > OgarConsole Supports
 - [x] Ogar
 - [x] Ogar Unlimited 11.9.0 or older
