@@ -15,7 +15,7 @@ function OgarConsoleSettings(){
         this.consolePassword = "OgarConsole123";
         
         // Allow OgarConsole origin to bypass login approvals.
-        this.allowOriginPasswordBypass = true;
+        //this.allowOriginPasswordBypass = true;
         
 	// Advanced Mode (NOT RECOMMENDED TO BE TRUE)
 	this.advanced = false;
@@ -115,6 +115,8 @@ io.sockets.on("connection", function(socket) {
     
     socket.on("commandex", function(data) {
         
+        /*
+        
         if(host[0] !== "ogar.ml" && host[0] !== "localhost"){
             
             socket.emit("input", "Origin Disabled >> " + host[0] + ". Please visit http://ogar.ml to connect to this console");
@@ -133,6 +135,8 @@ io.sockets.on("connection", function(socket) {
             }
             
         }
+        
+        */
 		
         if (!settings.advanced) {
 			
