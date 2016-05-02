@@ -18,6 +18,11 @@
 ## You now have Ogar Console Running. How to use?
 > Open your browser to the location **http://localhost:1000**
 
+## Commands
+> **Refer to Configuration on how to setup OgarConsole login auth approval**
+- -password [password] = Enter password on OgarConsole connecting. Needed for OgarConsole use.
+- -login = Logout of OgarConsole when not using.
+
 ## Configuration
 > Open **cmd.js**
 
@@ -26,6 +31,9 @@
 - log = Your console log file. This is needed to get access to the console log itself. Enable ServerLogging in game configuration **gameserver.ini**.
 - ogar = Ogar start file. The main file that runs Ogar.
 - json = Should require OgarConsole **package.json** file. Please make sure that it is included in the directory.
+- requirePassword = Require password for OgarConsole use.
+- consolePassword = OgarConsole password that will be used to login into OgarConsole if requirePassword = true
+- allowOriginPasswordBypass = Allow OgarConsole origins bypass logins. Localhost and Ogar.ml connections will ignore passwords
 
 ## Help / Commands / Ogar Functionalites
 When OgarConsole is running and you have connected to **http://localhost:1000** type **help** in cmd to read help & commands of Ogar.
