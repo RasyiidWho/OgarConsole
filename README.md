@@ -35,6 +35,8 @@
 - consolePassword = OgarConsole password that will be used to login into OgarConsole if requirePassword = true
 - allowOriginPasswordBypass = Allow OgarConsole origins bypass logins. Localhost and Ogar.ml connections will ignore passwords
 
+> More information [![GitHub issues](https://img.shields.io/github/issues/LegitSoulja/OgarConsole.svg)](https://github.com/LegitSoulja/OgarConsole/issues/7#issuecomment-216086983)
+
 ## Help / Commands / Ogar Functionalites
 When OgarConsole is running and you have connected to **http://localhost:1000** type **help** in cmd to read help & commands of Ogar. By default OgarConsole requires a password on connecting. enter **'-password OgarConsole123'** to login into Ogar Console
 
