@@ -5,17 +5,19 @@
 // OgarConsole Settings
 function OgarConsoleSettings(){
 	
-	// OgarConsole Port
-	this.serverPort = 1000;
+	 // OgarConsole Port
+	 this.serverPort = 8899;
 	
-        // OgarConsole password protection
-        this.requirePassword = true;
+    	// OgarConsole password protection
+    	this.requirePassword = true;
         
-        // OgarConsole password apon connecting
-        this.consolePassword = "OgarConsole123";
+    	//this.hostExternalIp = "";
+		
+	 // OgarConsole password apon connecting
+	 this.consolePassword = "OgarConsole123";
         
-        // Allow OgarConsole origin to bypass login approvals.
-        this.allowOriginPasswordBypass = true;
+    	// Allow OgarConsole origin to bypass login approvals.
+    	//this.allowOriginPasswordBypass = true;
         
 	// Advanced Mode (NOT RECOMMENDED TO BE TRUE)
 	this.advanced = false;
@@ -97,6 +99,21 @@ server.on('error', function(err){
 
 // OgarConsole Listen For Connections.
 app.get("/", function(req, res) {
+	
+	/*
+	if(settings.hostExternalIp.length < 5){
+		
+		var data = JSON.stringify(req.headers);
+		var jsonc = JSON.parse(data);
+		var server = jsonc.host.split(':');
+		var ip = server[0];
+		var port = server[1];
+		
+		settings.hostExternalIp = ip;
+		
+	}
+	*/
+	
     fs.readFile(__dirname + settings.consoleFile, function(err, data) {
         if(!err){
             res.send("" + data);
@@ -109,30 +126,19 @@ app.get("/", function(req, res) {
 
 // OgarConsole Socket Connection.
 io.sockets.on("connection", function(socket) {
-    
-    var host = socket.handshake.headers.host.split(':');
+
     var login = new newUserPassword();
-    
+	
     socket.on("commandex", function(data) {
-        
-        if(host[0] !== "ogar.ml" && host[0] !== "localhost"){
-            
-            socket.emit("input", "Origin Disabled >> " + host[0] + ". Please visit http://ogar.ml to connect to this console");
-            return;
-            
-        }else{
-            
-            if(settings.allowOriginPasswordBypass){
-
-                if(login._password.length < 3){
+       
+	  
+		/*
+		if(login._password.length < 3){
                     
-                    login._password = settings.consolePassword;
-                    
-                }
-
-            }
-            
-        }
+			login._password = settings.consolePassword;
+				
+		}
+		*/
 		
         if (!settings.advanced) {
 			
@@ -142,17 +148,16 @@ io.sockets.on("connection", function(socket) {
                     return;
                 }
 				
-                gameServer.log.onCommand(data);
-				
                 var split = data.split(" ");
                 var first = split[0].toLowerCase();
                 
                 if(first !== "-password" && settings.requirePassword){
                     
-                    if(login._password){
+                    if(login._password.length > 4){
 
                         if(login._password === settings.consolePassword){
                             
+							gameServer.log.onCommand(data);
 
                         }else{
 
