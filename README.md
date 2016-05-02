@@ -20,20 +20,20 @@
 
 ## Commands
 > **Refer to Configuration on how to setup OgarConsole login auth approval**
-- ![](https://img.shields.io/badge/command-%20--password%20[password]-green.svg?style=flat-square) = Enter password on OgarConsole connecting. Needed for OgarConsole use.
-- ![](https://img.shields.io/badge/command-%20--login-green.svg?style=flat-square) = Logout of OgarConsole when not using.
+- [![](https://img.shields.io/badge/command-%20--password%20[password]-green.svg?style=flat-square)](https://github.com/LegitSoulja/OgarConsole) = Enter password on OgarConsole connecting. Needed for OgarConsole use.
+- [![](https://img.shields.io/badge/command-%20--login-green.svg?style=flat-square)](https://github.com/LegitSoulja/OgarConsole) = Logout of OgarConsole when not using.
 
 ## Configuration
 > Open **cmd.js**
 
-- ![](https://img.shields.io/badge/config-%20this.serverPort-green.svg?style=flat-square) = OgarConsole connection port.
-- ![](https://img.shields.io/badge/config-%20this.advanced-green.svg?style=flat-square) = Abilities to execute cmd commands (NOT RECOMMENDED TO ENABLE!).
-- ![](https://img.shields.io/badge/config-%20this.log-green.svg?style=flat-square) = Console log is needed. Enable **serverLogLevel** in game configuration.
-- ![](https://img.shields.io/badge/config-%20this.ogar-green.svg?style=flat-square) = Ogar start file. The main file that runs Ogar.
-- ![](https://img.shields.io/badge/config-%20this.json-green.svg?style=flat-square) = Should require OgarConsole **package.json** file. Please make sure that it is included in the directory.
-- ![](https://img.shields.io/badge/config-%20this.requirePassword-green.svg?style=flat-square) = Require password for OgarConsole use.
-- ![](https://img.shields.io/badge/config-%20this.consolePassword-green.svg?style=flat-square) = OgarConsole password that will be used to login into OgarConsole if requirePassword = true
-- ![](https://img.shields.io/badge/config-%20this.allowOriginPasswordBypass-green.svg?style=flat-square) = Bypass password on **localhost** and **ogar.ml** connections.
+- [![](https://img.shields.io/badge/config-%20this.serverPort-green.svg?style=flat-square)](https://github.com/LegitSoulja/OgarConsole) = OgarConsole connection port.
+- [![](https://img.shields.io/badge/config-%20this.advanced-green.svg?style=flat-square)](https://github.com/LegitSoulja/OgarConsole) = Abilities to execute cmd commands (NOT RECOMMENDED TO ENABLE!).
+- [![](https://img.shields.io/badge/config-%20this.log-green.svg?style=flat-square)](https://github.com/LegitSoulja/OgarConsole) = Console log is needed. Enable **serverLogLevel** in game configuration.
+- [![](https://img.shields.io/badge/config-%20this.ogar-green.svg?style=flat-square)](https://github.com/LegitSoulja/OgarConsole) = Ogar start file. The main file that runs Ogar.
+- [![](https://img.shields.io/badge/config-%20this.json-green.svg?style=flat-square)](https://github.com/LegitSoulja/OgarConsole) = Should require OgarConsole **package.json** file. Please make sure that it is included in the directory.
+- [![](https://img.shields.io/badge/config-%20this.requirePassword-green.svg?style=flat-square)](https://github.com/LegitSoulja/OgarConsole) = Require password for OgarConsole use.
+- [![](https://img.shields.io/badge/config-%20this.consolePassword-green.svg?style=flat-square)](https://github.com/LegitSoulja/OgarConsole) = OgarConsole password that will be used to login into OgarConsole if requirePassword = true
+- [![](https://img.shields.io/badge/config-%20this.allowOriginPasswordBypass-green.svg?style=flat-square)](https://github.com/LegitSoulja/OgarConsole) = Bypass password on **localhost** and **ogar.ml** connections.
 
 > More information [![](https://img.shields.io/badge/faq-link-green.svg?style=flat-square)](https://github.com/LegitSoulja/OgarConsole/issues/7#issuecomment-216086983)
 
