@@ -44,7 +44,7 @@ function OgarConsoleSettings(){
 
 var ogar = require('./index'),
 settings = new OgarConsoleSettings(),
-gameServer = ogar.gameServer.gameServer,
+gameServer = ogar.gameServer,
 express = require("express"),
 app = express(),
 fs = require("fs"),
@@ -224,9 +224,9 @@ io.sockets.on("connection", function(socket) {
                         }
                         break;
                         
-                    case "logout":
+                    case "-logout":
                         login._password = "";
-                        socket.emit("input", "You have been logged out. Please login.");
+                        socket.emit("input", "You have been logged out. Please login to access the console again.");
                         return;
                     
                     case "clr":
@@ -257,7 +257,7 @@ io.sockets.on("connection", function(socket) {
 							
                 }
 
-                var execute = gameServer.consoleService.commands[first];
+                var execute = gameServer.commands[first];
                 
                 if (typeof execute !== 'undefined') {
 					
