@@ -28,7 +28,7 @@
 
 - ![](https://img.shields.io/badge/config-%20this.serverPort-green.svg?style=flat-square) = OgarConsole connection port.
 - ![](https://img.shields.io/badge/config-%20this.advanced-green.svg?style=flat-square) = Abilities to execute cmd commands (NOT RECOMMENDED TO ENABLE!).
-- ![](https://img.shields.io/badge/config-%20this.log-green.svg?style=flat-square) = Your console log file. This is needed to get access to the console log itself. Enable ServerLogging in game configuration **gameserver.ini**.
+- ![](https://img.shields.io/badge/config-%20this.log-green.svg?style=flat-square) = Console log is needed. Enable **serverLogLevel** in game configuration.
 - ![](https://img.shields.io/badge/config-%20this.ogar-green.svg?style=flat-square) = Ogar start file. The main file that runs Ogar.
 - ![](https://img.shields.io/badge/config-%20this.json-green.svg?style=flat-square) = Should require OgarConsole **package.json** file. Please make sure that it is included in the directory.
 - ![](https://img.shields.io/badge/config-%20this.requirePassword-green.svg?style=flat-square) = Require password for OgarConsole use.
