@@ -15,7 +15,7 @@ function OgarConsoleSettings(){
         this.consolePassword = "OgarConsole123";
         
         // Allow OgarConsole origin to bypass login approvals.
-        this.allowOriginPasswordBypass = false;
+        this.allowOriginPasswordBypass = true;
         
 	// Advanced Mode (NOT RECOMMENDED TO BE TRUE)
 	this.advanced = false;
