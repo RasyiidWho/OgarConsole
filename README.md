@@ -21,7 +21,7 @@
 ## Commands
 > **Refer to Configuration on how to setup OgarConsole login auth approval**
 - [![](https://img.shields.io/badge/command-%20--password%20[password]-green.svg?style=flat-square)](https://github.com/LegitSoulja/OgarConsole) = Enter password on OgarConsole connecting. Needed for OgarConsole use.
-- [![](https://img.shields.io/badge/command-%20--login-green.svg?style=flat-square)](https://github.com/LegitSoulja/OgarConsole) = Logout of OgarConsole when not using.
+- [![](https://img.shields.io/badge/command-%20--logout-green.svg?style=flat-square)](https://github.com/LegitSoulja/OgarConsole) = Logout of OgarConsole when not using.
 
 ## Configuration
 > Open **cmd.js**
