@@ -224,7 +224,7 @@ io.sockets.on("connection", function(socket) {
                         }
                         break;
                         
-                    case "logout":
+                    case "-logout":
                         login._password = "";
                         socket.emit("input", "You have been logged out. Please login.");
                         return;
