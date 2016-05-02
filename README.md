@@ -36,7 +36,7 @@
 - allowOriginPasswordBypass = Allow OgarConsole origins bypass logins. Localhost and Ogar.ml connections will ignore passwords
 
 ## Help / Commands / Ogar Functionalites
-When OgarConsole is running and you have connected to **http://localhost:1000** type **help** in cmd to read help & commands of Ogar.
+When OgarConsole is running and you have connected to **http://localhost:1000** type **help** in cmd to read help & commands of Ogar. By default OgarConsole requires a password on connecting. enter **'-password OgarConsole123'** to login into Ogar Console
 
 ## Purchased OgarConsole?
 > You have been ripped off of buying OgarConsole and you should get a refund. OgarConsole is a free to use plugin.
