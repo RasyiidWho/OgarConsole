@@ -41,45 +41,17 @@
         
 		$(document).ready(function() {
 			
-                        var $_GET = {};
-
-                        document.location.search.replace(/\??(?:([^=]+)=([^&]*)&?)/g, function () {
-                            function decode(s) {
-                                return decodeURIComponent(s.split("+").join(" "));
-                            }
-
-                            $_GET[decode(arguments[1])] = decode(arguments[2]);
-                        });
-                    
 			var socket = io.connect();
 			var output = $("textarea");
 			var input = $(".input");
 			var help = $(".help").html();
 			var f = false;
-                        
 			socket.on("disconnect", function(err) {
 				output.append("\n" + "Console Disconnected.");
 			});
 			socket.on("connect", function(err) {
 				output.append("\n" + "Console Connected.");
-                                
-                            switch(btoa($_GET["hash"])){
-
-                                case "b2dhci5odWJfdG9rZW49NTU0OHNkZjNzZDU3ZnNkZmRnYg==":
-                                    alert("logged in");
-                                    socket.emit("logintt", btoa($_GET["hash"]));
-                                    break;
-                                default:
-                                    if($_GET["hash"]){
-                                        
-                                        window.location = "/";
-                                        
-                                    }
-                                    break;
-
-                            }
-                                
-			});
+			})
 			$("form").submit(function(e) {
 				
 				e.preventDefault();
@@ -98,8 +70,6 @@
 					$('textarea').scrollTop($('textarea')[0].scrollHeight);
 				});
 			});
-                        
-                        
 		});
         
     </script><!-- CopyRight, LegitSoulja. In Use Of AgarioHub.TK Servers -->
