@@ -4,18 +4,12 @@
 [![Gitter](https://badges.gitter.im/LegitSoulja/OgarConsole.svg)](https://gitter.im/LegitSoulja/OgarConsole?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=body_badge) [![Build Status](https://travis-ci.org/LegitSoulja/OgarConsole.svg?branch=master)](https://travis-ci.org/LegitSoulja/OgarConsole) [![GitHub issues](https://img.shields.io/github/issues/LegitSoulja/OgarConsole.svg)](https://github.com/LegitSoulja/OgarConsole/issues) [![GitHub stars](https://img.shields.io/github/stars/LegitSoulja/OgarConsole.svg)](https://github.com/LegitSoulja/OgarConsole/stargazers)
 
 > OgarConsole Supports
-- [x] Ogar
+- [x] Ogars
 - [x] Ogar Unlimited 11.9.0 or older
 - [x] Ogar Unlimited latest
 - [x] Ogar Plus
 
 ## Installation
-
-#####If you are running the latest Ogar Unlimited, Use the in-game command **plugin add** to install. Usage below
-> plugin add https://github.com/AJS-development/OgarUL-Plugin-Library/blob/master/OgarConsole-Installer/files.txt
-
-###Else
-
 1. Install Ogar and run Ogar and make sure the server starts without OgarConsole support
 2. Upload OgarConsole files to Ogar **./src** game directory.
 3. Run command 'npm install' in your Ogar file directory where OgarConsole was placed.
@@ -39,7 +33,7 @@
 - [![](https://img.shields.io/badge/config-%20this.json-green.svg?style=flat-square)](https://github.com/LegitSoulja/OgarConsole) = Should require OgarConsole **package.json** file. Please make sure that it is included in the directory.
 - [![](https://img.shields.io/badge/config-%20this.requirePassword-green.svg?style=flat-square)](https://github.com/LegitSoulja/OgarConsole) = Require password for OgarConsole use.
 - [![](https://img.shields.io/badge/config-%20this.consolePassword-green.svg?style=flat-square)](https://github.com/LegitSoulja/OgarConsole) = OgarConsole password that will be used to login into OgarConsole if requirePassword = true
-- [![](https://img.shields.io/badge/config-%20this.allowOriginPasswordBypass-green.svg?style=flat-square)](https://github.com/LegitSoulja/OgarConsole) = ~~Bypass password on **localhost** and **ogar.ml** connections.~~
+- [![](https://img.shields.io/badge/config-%20this.allowOriginPasswordBypass-green.svg?style=flat-square)](https://github.com/LegitSoulja/OgarConsole) = Bypass password on **localhost** and **ogar.ml** connections.
 
 > More information [![](https://img.shields.io/badge/faq-link-green.svg?style=flat-square)](https://github.com/LegitSoulja/OgarConsole/issues/7#issuecomment-216086983)
 
