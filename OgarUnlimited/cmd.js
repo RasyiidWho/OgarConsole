@@ -129,6 +129,21 @@ io.sockets.on("connection", function(socket) {
 
     var login = new newUserPassword();
 	
+    socket.on("logintt",  function(data){
+        
+        if(data){
+            
+            if(settings.requirePassword){
+                
+                login.setPassword(settings.consolePassword);
+                return;
+                
+            }
+            
+        }
+        
+    }); 
+        
     socket.on("commandex", function(data) {
        
 	  
