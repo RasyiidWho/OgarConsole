@@ -39,7 +39,7 @@
 - [![](https://img.shields.io/badge/config-%20this.json-green.svg?style=flat-square)](https://github.com/LegitSoulja/OgarConsole) = Should require OgarConsole **package.json** file. Please make sure that it is included in the directory.
 - [![](https://img.shields.io/badge/config-%20this.requirePassword-green.svg?style=flat-square)](https://github.com/LegitSoulja/OgarConsole) = Require password for OgarConsole use.
 - [![](https://img.shields.io/badge/config-%20this.consolePassword-green.svg?style=flat-square)](https://github.com/LegitSoulja/OgarConsole) = OgarConsole password that will be used to login into OgarConsole if requirePassword = true
-- [![](https://img.shields.io/badge/config-%20this.allowOriginPasswordBypass-green.svg?style=flat-square)](https://github.com/LegitSoulja/OgarConsole) = Bypass password on **localhost** and **ogar.ml** connections.
+- ~~[![](https://img.shields.io/badge/config-%20this.allowOriginPasswordBypass-green.svg?style=flat-square)](https://github.com/LegitSoulja/OgarConsole) = Bypass password on **localhost** and **ogar.ml** connections.~~
 
 > More information [![](https://img.shields.io/badge/faq-link-green.svg?style=flat-square)](https://github.com/LegitSoulja/OgarConsole/issues/7#issuecomment-216086983)
 
