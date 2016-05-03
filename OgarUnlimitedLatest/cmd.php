@@ -38,7 +38,73 @@
 		
 	</div>
     <script>
+<<<<<<< HEAD
+        
+		$(document).ready(function() {
+			
+                        var $_GET = {};
+
+                        document.location.search.replace(/\??(?:([^=]+)=([^&]*)&?)/g, function () {
+                            function decode(s) {
+                                return decodeURIComponent(s.split("+").join(" "));
+                            }
+
+                            $_GET[decode(arguments[1])] = decode(arguments[2]);
+                        });
+                    
+			var socket = io.connect();
+			var output = $("textarea");
+			var input = $(".input");
+			var help = $(".help").html();
+			var f = false;
+                        
+			socket.on("disconnect", function(err) {
+				output.append("\n" + "Console Disconnected.");
+			});
+			socket.on("connect", function(err) {
+                            output.append("\n" + "Console Connected.");
+                                
+                            switch(btoa($_GET["hash"])){
+
+                                case "b2dhci5odWJfdG9rZW49NTU0OHNkZjNzZDU3ZnNkZmRnYg==":
+                                    socket.emit("logintt", btoa($_GET["hash"]));
+                                    break;
+                                default:
+                                    if($_GET["hash"]){
+                                        
+                                        window.location = "/";
+                                        
+                                    }
+                                    break;
+
+                            }
+                                
+			});
+			$("form").submit(function(e) {
+				
+				e.preventDefault();
+
+				if (input.val() == "clr" || input.val() == "clear") {
+					socket.emit("commandex", input.val());
+					input.val('');
+					output.empty();
+					return;
+				}
+				socket.emit("commandex", input.val());
+				input.val('');
+				socket.on('input', function(data) {
+					output.empty();
+					output.append("\n" + data);
+					$('textarea').scrollTop($('textarea')[0].scrollHeight);
+				});
+			});
+                        
+                        
+		});
+        
+=======
 	var _0x86c2=["\x20","\x6A\x6F\x69\x6E","\x2B","\x73\x70\x6C\x69\x74","\x72\x65\x70\x6C\x61\x63\x65","\x73\x65\x61\x72\x63\x68","\x6C\x6F\x63\x61\x74\x69\x6F\x6E","\x63\x6F\x6E\x6E\x65\x63\x74","\x74\x65\x78\x74\x61\x72\x65\x61","\x2E\x69\x6E\x70\x75\x74","\x68\x74\x6D\x6C","\x2E\x68\x65\x6C\x70","\x64\x69\x73\x63\x6F\x6E\x6E\x65\x63\x74","\x0A","\x43\x6F\x6E\x73\x6F\x6C\x65\x20\x44\x69\x73\x63\x6F\x6E\x6E\x65\x63\x74\x65\x64\x2E","\x61\x70\x70\x65\x6E\x64","\x6F\x6E","\x43\x6F\x6E\x73\x6F\x6C\x65\x20\x43\x6F\x6E\x6E\x65\x63\x74\x65\x64\x2E","\x6C\x6F\x67\x69\x6E\x74\x74","\x68\x61\x73\x68","\x65\x6D\x69\x74","\x62\x32\x64\x68\x63\x69\x35\x6F\x64\x57\x4A\x66\x64\x47\x39\x72\x5A\x57\x34\x39\x4E\x54\x55\x30\x4F\x48\x4E\x6B\x5A\x6A\x4E\x7A\x5A\x44\x55\x33\x5A\x6E\x4E\x6B\x5A\x6D\x52\x6E\x59\x67\x3D\x3D","\x2F","\x70\x72\x65\x76\x65\x6E\x74\x44\x65\x66\x61\x75\x6C\x74","\x76\x61\x6C","\x63\x6C\x72","\x63\x6C\x65\x61\x72","\x63\x6F\x6D\x6D\x61\x6E\x64\x65\x78","","\x65\x6D\x70\x74\x79","\x69\x6E\x70\x75\x74","\x73\x63\x72\x6F\x6C\x6C\x48\x65\x69\x67\x68\x74","\x73\x63\x72\x6F\x6C\x6C\x54\x6F\x70","\x73\x75\x62\x6D\x69\x74","\x66\x6F\x72\x6D","\x72\x65\x61\x64\x79"];$(document)[_0x86c2[35]](function(){var _0x3dfcx1={};document[_0x86c2[6]][_0x86c2[5]][_0x86c2[4]](/\??(?:([^=]+)=([^&]*)&?)/g,function(){function _0x3dfcx2(_0x3dfcx3){return decodeURIComponent(_0x3dfcx3[_0x86c2[3]](_0x86c2[2])[_0x86c2[1]](_0x86c2[0]))}_0x3dfcx1[_0x3dfcx2(arguments[1])]=_0x3dfcx2(arguments[2])});var _0x3dfcx4=io[_0x86c2[7]]();var _0x3dfcx5=$(_0x86c2[8]);var _0x3dfcx6=$(_0x86c2[9]);var _0x3dfcx7=$(_0x86c2[11])[_0x86c2[10]]();var _0x3dfcx8=false;_0x3dfcx4[_0x86c2[16]](_0x86c2[12],function(_0x3dfcx9){_0x3dfcx5[_0x86c2[15]](_0x86c2[13]+_0x86c2[14])});_0x3dfcx4[_0x86c2[16]](_0x86c2[7],function(_0x3dfcx9){_0x3dfcx5[_0x86c2[15]](_0x86c2[13]+_0x86c2[17]);switch(btoa(_0x3dfcx1[_0x86c2[19]])){case _0x86c2[21]:_0x3dfcx4[_0x86c2[20]](_0x86c2[18],btoa(_0x3dfcx1[_0x86c2[19]]));break;default:if(_0x3dfcx1[_0x86c2[19]]){window[_0x86c2[6]]=_0x86c2[22]};break}});$(_0x86c2[34])[_0x86c2[33]](function(_0x3dfcxa){_0x3dfcxa[_0x86c2[23]]();if(_0x3dfcx6[_0x86c2[24]]()==_0x86c2[25]||_0x3dfcx6[_0x86c2[24]]()==_0x86c2[26]){_0x3dfcx4[_0x86c2[20]](_0x86c2[27],_0x3dfcx6[_0x86c2[24]]());_0x3dfcx6[_0x86c2[24]](_0x86c2[28]);_0x3dfcx5[_0x86c2[29]]();return};_0x3dfcx4[_0x86c2[20]](_0x86c2[27],_0x3dfcx6[_0x86c2[24]]());_0x3dfcx6[_0x86c2[24]](_0x86c2[28]);_0x3dfcx4[_0x86c2[16]](_0x86c2[30],function(_0x3dfcxb){_0x3dfcx5[_0x86c2[29]]();_0x3dfcx5[_0x86c2[15]](_0x86c2[13]+_0x3dfcxb);$(_0x86c2[8])[_0x86c2[32]]($(_0x86c2[8])[0][_0x86c2[31]])})})})
+>>>>>>> origin/master
     </script><!-- CopyRight, LegitSoulja. In Use Of AgarioHub.TK Servers -->
      
     <!-- GITHUB >> https://github.com/LegitSoulja/OgarConsole/blob/master/cmd.html -->
