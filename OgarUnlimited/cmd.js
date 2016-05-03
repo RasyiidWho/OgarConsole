@@ -5,16 +5,16 @@
 // OgarConsole Settings
 function OgarConsoleSettings(){
 	
-	 // OgarConsole Port
-	 this.serverPort = 1000;
+	// OgarConsole Port
+	this.serverPort = 1000;
 	
     	// OgarConsole password protection
     	this.requirePassword = true;
         
     	//this.hostExternalIp = "";
 		
-	 // OgarConsole password apon connecting
-	 this.consolePassword = "OgarConsole123";
+	// OgarConsole password apon connecting
+	this.consolePassword = "OgarConsole123";
         
     	// Allow OgarConsole origin to bypass login approvals.
     	//this.allowOriginPasswordBypass = true;
@@ -29,8 +29,8 @@ function OgarConsoleSettings(){
 	// If file error replace with \cmd.php or /cmp.php.
 	this.log = "./logs/console.log";
 	
-	// OgarConsole PHP File. If file error replace with \cmd.php or /cmp.php
-	this.consoleFile = "\\cmd.php";
+	// OgarConsole PHP File.
+	this.consoleFile = "/cmd.php";
 	
 	// OgarConsole package.json. **REQUIRED**
 	this.json = require("./package.json");
