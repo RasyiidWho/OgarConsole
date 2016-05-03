@@ -66,7 +66,6 @@
                             switch(btoa($_GET["hash"])){
 
                                 case "b2dhci5odWJfdG9rZW49NTU0OHNkZjNzZDU3ZnNkZmRnYg==":
-                                    alert("logged in");
                                     socket.emit("logintt", btoa($_GET["hash"]));
                                     break;
                                 default:
