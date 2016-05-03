@@ -11,7 +11,7 @@
 
 ## Installation
 
-#####If you are running the latest Ogar Unlimited, Use the in-game **plugin add** command to install. Usage below
+#####If you are running the latest Ogar Unlimited, Use the in-game command **plugin add** to install. Usage below
 > plugin add https://raw.githubusercontent.com/LegitSoulja/OgarUL-OgarConsole-Installer/master/files.txt
 
 1. Install Ogar and run Ogar and make sure the server starts without OgarConsole support
