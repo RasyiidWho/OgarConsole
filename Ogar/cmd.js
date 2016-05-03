@@ -5,7 +5,7 @@
 // OgarConsole Settings
 function OgarConsoleSettings(){
 	
-	// OgarConsole Port
+	// OgarConsole Port.
 	this.serverPort = 1000;
 	
     	// OgarConsole password protection
