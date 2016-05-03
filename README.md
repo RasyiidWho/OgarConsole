@@ -14,6 +14,8 @@
 #####If you are running the latest Ogar Unlimited, Use the in-game command **plugin add** to install. Usage below
 > plugin add https://raw.githubusercontent.com/LegitSoulja/OgarUL-OgarConsole-Installer/master/files.txt
 
+###Else
+
 1. Install Ogar and run Ogar and make sure the server starts without OgarConsole support
 2. Upload OgarConsole files to Ogar **./src** game directory.
 3. Run command 'npm install' in your Ogar file directory where OgarConsole was placed.
