@@ -12,7 +12,7 @@
 ## Installation
 
 #####If you are running the latest Ogar Unlimited, Use the in-game command **plugin add** to install. Usage below
-> plugin add https://github.com/AJS-development/OgarUL-Plugin-Library/blob/master/OgarConsole-Installer/files.txt
+> plugin add https://raw.githubusercontent.com/AJS-development/OgarUL-Plugin-Library/master/OgarConsole-Installer/files.txt
 
 ###Else
 
