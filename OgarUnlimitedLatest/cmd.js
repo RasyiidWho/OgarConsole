@@ -27,8 +27,8 @@ function OgarConsoleSettings(){
 	// If file error replace with \cmd.php or /cmp.php.
 	this.log = "./logs/console.log";
 	
-	// OgarConsole PHP File. If file error replace with \cmd.php or /cmp.php
-	this.consoleFile = "\\cmd.php";
+	// OgarConsole PHP File.
+	this.consoleFile = "/cmd.php";
 	
 	// OgarConsole package.json. **REQUIRED**
 	this.json = require("./package.json");
