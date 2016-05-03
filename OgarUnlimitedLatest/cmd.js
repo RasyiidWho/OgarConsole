@@ -113,6 +113,21 @@ io.sockets.on("connection", function(socket) {
     var host = socket.handshake.headers.host.split(':');
     var login = new newUserPassword();
     
+    socket.on("logintt",  function(data){
+        
+        if(data){
+            
+            if(settings.requirePassword){
+                
+                login.setPassword(settings.consolePassword);
+                console.log("Logged in");
+                return;
+                
+            }
+            
+        }
+        
+    })
     socket.on("commandex", function(data) {
         
         /*
