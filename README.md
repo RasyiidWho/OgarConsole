@@ -5,7 +5,7 @@ https://github.com/LegitSoulja/OgarConsole
 
 
 
-# OgarConsole v1.0.2
+# OgarConsole v1.0.3
 ![Image of OgarConsole] (http://i.imgur.com/iM539GC.png)
 
 [![Gitter](https://badges.gitter.im/LegitSoulja/OgarConsole.svg)](https://gitter.im/LegitSoulja/OgarConsole?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=body_badge) [![Build Status](https://travis-ci.org/LegitSoulja/OgarConsole.svg?branch=master)](https://travis-ci.org/LegitSoulja/OgarConsole) [![GitHub issues](https://img.shields.io/github/issues/LegitSoulja/OgarConsole.svg)](https://github.com/LegitSoulja/OgarConsole/issues) [![GitHub stars](https://img.shields.io/github/stars/LegitSoulja/OgarConsole.svg)](https://github.com/LegitSoulja/OgarConsole/stargazers)
@@ -36,6 +36,7 @@ https://github.com/LegitSoulja/OgarConsole
 - [![](https://img.shields.io/badge/config-%20this.requirePassword-green.svg?style=flat-square)](https://github.com/LegitSoulja/OgarConsole) = Require password for OgarConsole use.
 - [![](https://img.shields.io/badge/config-%20this.consolePassword-green.svg?style=flat-square)](https://github.com/LegitSoulja/OgarConsole) = OgarConsole password that will be used to login into OgarConsole if requirePassword = true
 - [![](https://img.shields.io/badge/config-%20this.allowOriginPasswordBypass-green.svg?style=flat-square)](https://github.com/LegitSoulja/OgarConsole) = Bypass password on **localhost** and **ogar.ml** connections.
+- [![](https://img.shields.io/badge/config-%20this.allowRestart-green.svg?style=flat-square)](https://github.com/LegitSoulja/OgarConsole) = Allow console to be restartable. Restarting can also not re-lauch the program.
 
 > More information [![](https://img.shields.io/badge/faq-link-green.svg?style=flat-square)](https://github.com/LegitSoulja/OgarConsole/issues/7#issuecomment-216086983)
 
