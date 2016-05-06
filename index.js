@@ -1,17 +1,8 @@
 'use scrict';
 
-var OgarConsole = function() { 
+var OgarConsole = function(thisOgarConsole) { 
     
-	if(OgarConsole.prototype.update()){
-		
-		OgarConsole.prototype.log("Updating OgarConsole..");
-		
-	}else{
-		
-		// This will start regardless.... 
-		this.start();
-		
-	}
+	this.start();
 
 };
 
@@ -287,108 +278,6 @@ OgarConsole.prototype.sendCommand = function(array, login, socket){
     
 };
 
-OgarConsole.prototype.update = function(){
-	
-    var packagedJson = "";
-	
-    // AJS (Andrews way of downloading updates/plugins)
-                    
-    var download = function(url, dest) {
-        request(url, function (error, response, body) {
-            if (!error && response.statusCode === 200 && body !== "") {
-                fs.writeFile(dest, body, (err, res)=> {
-            });
-            }
-        });
-    };
-    
-    if(typeof gameServer.plugins !== 'undefined'){
-        
-        if(gameServer.plugins.indexOf("OgarConsole")){
-
-            try{
-                
-                // AJS (Andrew method of downloading..)
-				
-                request("https://raw.githubusercontent.com/LegitSoulja/OgarConsole/master/package.json", function(e, r, b){
-
-                    if(!e && r.statusCode === 200 && b !== ""){
-
-						packagedJson = JSON.parse(b.toString('utf-8'));
-
-                    }else{
-						//console.log(b);
-                        throw e;
-                    }
-
-                });
-
-                if(packagedJson.version !== thisOgarConsole.settings().version){
-
-                    console.log("Updating OgarConsole.." + thisOgarConsole.settings().version + " >> " + packagedJson.version);
-                   
-                    setTimeout(function(){
-                        
-                        console.log("[Console] Downloading ogarConsole new updates.. Server restart will occur afterwards.");
-                        download('https://raw.githubusercontent.com/LegitSoulja/OgarConsole/plugin/oldindex.js','./oldindex.js');
-                        download('https://raw.githubusercontent.com/LegitSoulja/OgarConsole/plugin/cmd.php','./cmd.php');
-                        download('https://raw.githubusercontent.com/LegitSoulja/OgarConsole/plugin/index.js','./index.js');
-                        download('https://raw.githubusercontent.com/LegitSoulja/OgarConsole/plugin/package.json','./package.json');
-                        download('https://raw.githubusercontent.com/LegitSoulja/OgarConsole/plugin/README.md','./OgarConsoleReadme.md');
-                        
-                        setTimeout(function(){
-                            
-                            thisOgarConsole.log("OgarConsole updated.. Restarting in 5 seconds..");
-                            
-                            setTimeout(function(){
-                                
-                                thisOgarConsole.log("OgarConsole && Ogar restarting...");
-                                process.exit(0);
-								
-								return true;
-                                
-                            },1000*5);
-                            
-                        }, 1000*2);
-                        
-                    }, 1000/2);
-                    
-                    
-                    
-
-                }else{
-
-                    // No updates is needed..
-					console.log("No updates needed");
-					return false;
-
-                }
-                
-            }catch(e){
-                
-                // Throw any errors received here..
-                console.log(e);
-				return false;
-                
-            }
-            
-            
-        }else{
-            
-            // Plugins exist, But OgarConsole doesnt exist..
-            return false;
-            
-        }
-        
-    }else{
-        
-        // Return false, if this is not a plugin..
-        return false;
-        
-    }
-    
-};
-
 OgarConsole.prototype.terminate = function(){
     
     gameServer.socketServer.close();
@@ -403,6 +292,6 @@ OgarConsole.prototype.log = function(log){
     return;
     
 };
-var thisOgarConsole = new OgarConsole();
+var thisOgarConsole = new OgarConsole(this);
 exec("title OgarConsole " + thisOgarConsole.version + " / Port " + thisOgarConsole.serverPort , function(e, s, t) {});
 thisOgarConsole.log("Version: " + thisOgarConsole.version);
