@@ -23,7 +23,7 @@ OgarConsole.prototype.settings = function(){
 };
 
 var ogar = require("./oldindex");
-        gameServer = ogar.gameServer,
+        gameServer = ogar.gameServer.gameServer,
         express = require("express"),
         app = express(),
         fs = require("fs"),
@@ -246,7 +246,7 @@ OgarConsole.prototype.sendCommand = function(array, login, socket){
             
     }
     
-    var execute = gameServer.commands[first];
+    var execute = gameServer.consoleServer.commands[first];
     
     if(typeof execute !== 'undefined'){
         
