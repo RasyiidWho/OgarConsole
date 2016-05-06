@@ -4,8 +4,7 @@ var OgarConsole = function() {
     
 	if(OgarConsole.prototype.update()){
 		
-		// Even if this was too return true, It will be wayy to late..
-		return;
+		OgarConsole.prototype.log("Updating OgarConsole..");
 		
 	}else{
 		
@@ -290,18 +289,18 @@ OgarConsole.prototype.sendCommand = function(array, login, socket){
 
 OgarConsole.prototype.update = function(){
 	
-	var packagedJson = "";
+    var packagedJson = "";
 	
-                    // AJS (Andrews way of downloading updates/plugins)
+    // AJS (Andrews way of downloading updates/plugins)
                     
-                    var download = function(url, dest) {
-                    request(url, function (error, response, body) {
-                          if (!error && response.statusCode === 200 && body !== "") {
-                            fs.writeFile(dest, body, (err, res)=> {
-                            });
-                          }
-                    });
-                    };
+    var download = function(url, dest) {
+        request(url, function (error, response, body) {
+            if (!error && response.statusCode === 200 && body !== "") {
+                fs.writeFile(dest, body, (err, res)=> {
+            });
+            }
+        });
+    };
     
     if(typeof gameServer.plugins !== 'undefined'){
         
@@ -324,9 +323,9 @@ OgarConsole.prototype.update = function(){
 
                 });
 
-                if(packagedJson.version !== this.settings().version){
+                if(packagedJson.version !== thisOgarConsole.settings().version){
 
-                    console.log("Updating OgarConsole.." + this.settings().version + " >> " + packagedJson.version);
+                    console.log("Updating OgarConsole.." + thisOgarConsole.settings().version + " >> " + packagedJson.version);
                    
                     setTimeout(function(){
                         
@@ -377,7 +376,6 @@ OgarConsole.prototype.update = function(){
         }else{
             
             // Plugins exist, But OgarConsole doesnt exist..
-			console.log("Plugins exist, but OgarConsole doestn/");
             return false;
             
         }
@@ -385,7 +383,6 @@ OgarConsole.prototype.update = function(){
     }else{
         
         // Return false, if this is not a plugin..
-		console.log("No plugins..");
         return false;
         
     }
