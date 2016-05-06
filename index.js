@@ -246,7 +246,7 @@ OgarConsole.prototype.sendCommand = function(array, login, socket){
             
     }
     
-    var execute = gameServer.consoleServer.commands[first];
+    var execute = gameServer.consoleService.commands[first];
     
     if(typeof execute !== 'undefined'){
         
