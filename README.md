@@ -1,4 +1,4 @@
-# OgarConsole v1.0.3
+# OgarConsole v1.0.3(RE-CODED)
 **PROJECT ABANDONED! NO FUTURE UPDATES!.**
 ![Image of OgarConsole] (http://i.imgur.com/iM539GC.png)
 
