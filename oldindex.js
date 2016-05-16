@@ -1,15 +1,13 @@
 // Imports
 'use strict';
 const Readline = require('readline');
-const VERSION = '16.3.5';
+const VERSION = '16.5.5';
 const ControlServer = require('./core/ControlServer');
-const controlServer = new ControlServer(VERSION);
-
-exports.gameServer = controlServer;
-
+let controlServer = new ControlServer(VERSION);
 //throw error
 // Init variables
 let showConsole = true;
+
 // Handle arguments
 process.argv.forEach(function (val) {
   if (val == "--noconsole") {
@@ -18,9 +16,16 @@ process.argv.forEach(function (val) {
     console.log("Proper Usage: node index.js");
     console.log("    --noconsole         Disables the console");
     console.log("    --help              Help menu.");
+    console.log("    --expose-gc         Enables garbage collection")
     console.log("");
   }
 });
+if (global.gc) {
+    global.gc();
+} else {
+    console.log('Garbage collection unavailable.  Pass --expose-gc '
+      + 'when launching node to enable garbage collection.(memory leak)');
+}
 
 // There is no stopping an exit so clean up
 // NO ASYNC CODE HERE - only use SYNC or it will not happen
@@ -31,7 +36,7 @@ process.on('exit', (code) => {
 
 // init/start the control server
 controlServer.init();
-controlServer.start();
+setTimeout(controlServer.start(),3400);
 
 // Initialize the server console
 if (showConsole) {
@@ -40,4 +45,3 @@ if (showConsole) {
     output: process.stdout
   });
   setTimeout(controlServer.getConsoleService().prompt(streamsInterface), 100);
-}
