@@ -45,3 +45,4 @@ if (showConsole) {
     output: process.stdout
   });
   setTimeout(controlServer.getConsoleService().prompt(streamsInterface), 100);
+}
