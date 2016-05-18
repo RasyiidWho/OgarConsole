@@ -5,6 +5,8 @@ const VERSION = '16.5.5';
 const ControlServer = require('./core/ControlServer');
 let controlServer = new ControlServer(VERSION);
 //throw error
+// fix
+exports.gameServer = controlServer.gameServer;
 // Init variables
 let showConsole = true;
 
